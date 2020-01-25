@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.8.0 on win32)" generated="20200115 16:50:02.581" rpa="false">
+<suite id="s1" name="regisSucNoOrganInfo" source="D:\qa\WebDemo-master\demoapp\html\Lab3\regisSucNoOrganInfo.robot">
+<test id="s1-t1" name="Open Event Registration Page">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${WELCOME URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20200115 16:50:02.947" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:7272/Lab3/Registration.html'.</msg>
+<status status="PASS" starttime="20200115 16:50:02.947" endtime="20200115 16:50:09.712"></status>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<arguments>
+<arg>${WELCOME URL}</arg>
+</arguments>
+<msg timestamp="20200115 16:50:09.724" level="INFO">Current location is 'http://localhost:7272/Lab3/Registration.html'.</msg>
+<status status="PASS" starttime="20200115 16:50:09.713" endtime="20200115 16:50:09.725"></status>
+</kw>
+<status status="PASS" starttime="20200115 16:50:02.946" endtime="20200115 16:50:09.726" critical="yes"></status>
+</test>
+<test id="s1-t2" name="Register Success No Organization Info">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>firstname</arg>
+<arg>${FNAME}</arg>
+</arguments>
+<msg timestamp="20200115 16:50:09.733" level="INFO">Typing text 'Somsri' into text field 'firstname'.</msg>
+<status status="PASS" starttime="20200115 16:50:09.733" endtime="20200115 16:50:09.901"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>lastname</arg>
+<arg>${LNAME}</arg>
+</arguments>
+<msg timestamp="20200115 16:50:09.903" level="INFO">Typing text 'Sodsai' into text field 'lastname'.</msg>
+<status status="PASS" starttime="20200115 16:50:09.903" endtime="20200115 16:50:10.061"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>email</arg>
+<arg>${EMAIL}</arg>
+</arguments>
+<msg timestamp="20200115 16:50:10.061" level="INFO">Typing text 'somsai@kkumail.com' into text field 'email'.</msg>
+<status status="PASS" starttime="20200115 16:50:10.061" endtime="20200115 16:50:10.285"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>phone</arg>
+<arg>${PHONE}</arg>
+</arguments>
+<msg timestamp="20200115 16:50:10.287" level="INFO">Typing text '081-001-1234' into text field 'phone'.</msg>
+<status status="PASS" starttime="20200115 16:50:10.287" endtime="20200115 16:50:10.471"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>Register</arg>
+</arguments>
+<msg timestamp="20200115 16:50:10.472" level="INFO">Clicking button 'Register'.</msg>
+<status status="PASS" starttime="20200115 16:50:10.472" endtime="20200115 16:50:10.652"></status>
+</kw>
+<kw name="Location Should Contain" library="SeleniumLibrary">
+<doc>Verifies that the current URL contains ``expected``.</doc>
+<arguments>
+<arg>${SUCCESS URL}</arg>
+</arguments>
+<msg timestamp="20200115 16:50:10.663" level="INFO">Current location contains 'http://localhost:7272/Lab3/Success.html'.</msg>
+<status status="PASS" starttime="20200115 16:50:10.653" endtime="20200115 16:50:10.663"></status>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current page title equals ``title``.</doc>
+<arguments>
+<arg>Success</arg>
+</arguments>
+<msg timestamp="20200115 16:50:10.672" level="INFO">Page title is 'Success'.</msg>
+<status status="PASS" starttime="20200115 16:50:10.664" endtime="20200115 16:50:10.672"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>Success</arg>
+</arguments>
+<status status="PASS" starttime="20200115 16:50:10.676" endtime="20200115 16:50:10.702"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>Thank you for participating in our event</arg>
+</arguments>
+<status status="PASS" starttime="20200115 16:50:10.702" endtime="20200115 16:50:10.725"></status>
+</kw>
+<status status="PASS" starttime="20200115 16:50:09.731" endtime="20200115 16:50:10.725" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200115 16:50:02.583" endtime="20200115 16:50:10.731"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0">Critical Tests</stat>
+<stat pass="2" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" id="s1" name="regisSucNoOrganInfo">regisSucNoOrganInfo</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
